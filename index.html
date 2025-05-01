@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <a href="#body" id="HOME"> Home</a>
+        <a href="#aboutme" id="ABOUT">About</a>
+        <a href="#project" id="PROJECTS">Projects</a>
+        <a href="#Skills" id="SKILLS">Skills</a>
+        <a href="#footer" id="CONTACT">Contact</a>
+    </div>
+    <div id="body">
+        <div id="info">
+            <h6 class="hey">Hey It's me</h6>
+            <h1 id="name">Ashish</h1>
+            <h6 id="hey">I am a Web Developer</h6>
+        </div>
+    </div>
+    <div id="aboutme">
+        <h1>About Me</h1>
+       <p id="about">I am a keen learner and dedicated Frontend Developer with proficiency in Java, C++, JavaScript, CSS, and HTML. Passionate about crafting dynamic and user-friendly web interfaces to ensure optimal user experiences. I continuously explore new technologies and best practices in web development, aiming to deliver high-quality solutions that meet client needs and enhance user satisfaction.</p>
+        <!-- <p id="about">Hi, I’m a full stack developer who loves crafting seamless digital experiences—from <br>pixel-perfect front ends to powerful, reliable back ends. I enjoy solving real-world problems <br> with clean code and creative thinking.</p> -->
+    </div>
+
+    <div id="PROJECT">
+    <div id="project">
+        <h1>Projects</h1>
+    </div>
+    <div id="Projects">
+        <div class="Project">
+            <img src="https://storage.googleapis.com/webdesignledger.pub.network/WDL/Portfolios_Featured_Image_06.jpg" alt="">
+            <!-- <h4>Online Potfolio</h4> -->
+            <a href="https://ashish9985.github.io/portofolio/">Online Portfolio</a>
+        </div>
+        <div class="Project">
+            <img src="https://th.bing.com/th/id/OIP.fH2ceYvvPVrVlOIjhDm2tQHaDt?w=342&h=175&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+            <!-- <h4>Youtube Clone</h4> -->
+        </div>
+        <div class="Project">
+            <img src="https://th.bing.com/th/id/OIP.d1Y16rzLcgIQE8eL4JEckwHaFj?w=208&h=156&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+            <!-- <h4>Todo List</h4> -->
+        </div>
+    </div>
+    </div>
+
+    <div id="Skills">
+        <h1>Skills</h1>
+    </div>
+    <div id="skills-list">
+
+         <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="90" data-progress-color="crimson" data-bg-color="black">
+            <div class="inner-circle"></div>
+            <p class="percentage">HTML</p>
+          </div>
+          
+          <div class="circular-progress" data-inner-circle-color="white" data-percentage="70" data-progress-color="rebeccapurple" data-bg-color="violet">
+            <div class="inner-circle"></div>
+            <p class="percentage">CSS</p>
+          </div>
+          
+          <div class="circular-progress" data-inner-circle-color="lime" data-percentage="80" data-progress-color="green" data-bg-color="lightgrey">
+            <div class="inner-circle"></div>
+            <p class="percentage">JS</p>
+          </div>
+          
+          <div class="circular-progress" data-inner-circle-color="cyan" data-percentage="80" data-progress-color="blue" data-bg-color="skyblue">
+            <div class="inner-circle"></div>
+            <p class="percentage">Express</p>
+          </div>
+          
+          <div class="circular-progress" data-inner-circle-color="black" data-percentage="75" data-progress-color="white" data-bg-color="grey">
+            <div class="inner-circle"></div>
+            <p class="percentage">JAVA</p>
+          </div>
+    </div>
+    <div id="skill_labels">
+        <h2 class="skillnames"> HTML</h2>
+        <h2 class="skillnames">CSS</h2>
+        <h2 class="skillnames">JS</h2>
+        <h2 class="skillnames">Express</h2>
+        <h2 class="skillnames">JAVA</h2>
+    </div>
+
+
+    
+    <div id="footer">
+        <div id="Contact">
+            <h1>Contact Me</h1>
+        </div>
+        <div id="details">
+            <div id="contactdetail">
+                <div id="phoneno">
+                    <i></i>
+                    <h4>+91 8979778599</h4>
+                </div>
+                <div id="email">
+                    <i></i>
+                    <h4>ashish8979778599@gmail.com</h4>
+                </div>
+            </div>
+            <div id="form">
+                <form action="http://localhost:3000/submit-form" method="POST">
+                    <input type="text" id="inputname" placeholder="Enter Your Name" name="name">
+                    <input type="email" id="inputemail" placeholder="Enter Your Email" name="email">
+                    <input type="textarea" id="inputmessage" placeholder="Message name=message">
+                    <button onclick="submitForm()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

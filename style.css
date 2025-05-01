@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color:   #000400;
+    color: white;
+}
+#header{
+    height: 10%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+a{
+    margin: 2%;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+#body{
+    height: 80vh;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: 1.5fr 1fr; */
+}
+h1{
+    color: aqua;
+}
+#info{
+    height: 45vh;
+    width: 50%;
+    color:whit;
+    padding-top: 5%;
+    padding-left: 20%;
+    align-items: center;
+}
+#name{
+    font-size: 500%;
+    margin: 1%;
+    color: aqua;
+}
+#hey{
+    font-size: 200%;
+    margin: 1%;
+}
+.hey{
+    padding-top:30%;
+    font-size: 200%;
+    margin: 1%;
+
+}
+
+/* #image{
+    height: 100%;
+} */
+
+#aboutme{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#about{
+    color: aqua;
+}
+p{
+    font-size: larger;
+}
+#project{
+    padding-top: 100px;
+    justify-items: center;
+}
+#PROJECT{
+    height: 100vh;
+    margin-bottom: 10%;
+    padding-top:50px ;
+}
+#Projects{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* padding-left: 10%;
+    padding-top: 5%; */
+}
+.Project{
+    /* border: 2px solid white; */
+    height: 50vh;
+    margin:1%;
+    border-radius: 10px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+#Skills{
+    justify-items: center;
+    margin-top: 10;
+}
+/* .Project{
+    
+    align-items: center;
+} */
+img{
+    height: 250px;
+    width: 350px;
+    border-radius: 8px;
+}
+#skills-list{
+    height: 50vh;
+    width:100vw;
+}
+
+#Contact{
+    display: flex;
+    justify-content: center;
+}
+#details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    width: 100vw;
+}
+#contactdetail{
+    margin-left: 20%;
+    margin-top: 20%;
+    color: gray;
+    padding: 20px;
+    padding-right: 0%;
+}
+#phoneno{
+    height: 10%;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+#email{
+    height: 20%;
+    padding-left: 20px;
+}
+#form{
+    margin-right: 20%;
+    margin-top: 20%;
+    padding-right: 20px;
+}
+input{
+    border: 2px solid rgb(11, 99, 200);
+    background-color: #000400;
+    color: white;
+    margin: 2%;
+}
+#inputname{
+    height: 20px;
+    width: 350px;
+}
+#inputemail{
+    height: 20px;
+    width: 350px;
+}
+#inputmessage{
+    height: 120px;
+    width: 350px;
+}
+button{
+    height: 20px;
+    width: 350px;
+    margin-left: 2%;
+}
+#skills-list{
+    display: flex;
+    height: auto;
+    width: 80vw;
+    flex-direction: row;
+    margin: 2%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    padding: 2%;
+    justify-content: space-between;
+}
+.skill{
+    /* border: 2px solid red; */
+    background-color: aqua;
+    height: 30vh;
+    width: 16%;
+    margin:1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: red;
+    font-size: xx-large;
+
+    
+}
+p{
+    color: #000400;
+}
+
+
+:root {
+  --progress-bar-width: 200px;
+  --progress-bar-height: 200px;
+  --font-size: 2rem;
+}
+
+/* body {
+  height: 100vh;
+  background-color: #100c08;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  place-items: center;
+  gap: 2rem;
+} */
+.circular-progress {
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-circle {
+  position: absolute;
+  width: calc(var(--progress-bar-width) - 30px);
+  height: calc(var(--progress-bar-height) - 30px);
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+
+.percentage {
+  position: relative;
+  font-size: var(--font-size);
+  color: rgb(0, 0, 0, 0.8);
+}
+#skill_labels{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    padding-top: 0%;
+    justify-content: space-between;
+    padding-top: none;
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --progress-bar-width: 150px;
+    --progress-bar-height: 150px;
+    --font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --progress-bar-width: 120px;
+    --progress-bar-height: 120px;
+    --font-size: 1rem;
+  }
+}
+
